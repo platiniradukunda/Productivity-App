@@ -1,9 +1,12 @@
 import React from 'react';
+import {Link} from 'react-router-dom'
 
 function StartButton(props) {
     return (
-        <div>
-            <button>Let's get to work</button>
+        <div className="startWork">
+            <Link to="/todolist">
+            <button className="startWorkButton">Let's get to work</button>
+            </Link>
         </div>
     );
 }

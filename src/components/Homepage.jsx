@@ -53,9 +53,9 @@ class Homepage extends Component {
             if(hours<12) {
                 var greetings = "Good Morning, " + name + ". Let's grind!"
             } else if(hours>12 && hours<=18) {
-                var greetings = "Good Afternoon, " + name
+                greetings = "Good Afternoon, " + name
             } else {
-                var greetings = "Good Evening, " + name
+                greetings = "Good Evening, " + name
             }
 
             // updating state with the current time and greeting statement
@@ -99,7 +99,7 @@ class Homepage extends Component {
     
     render() {
         return (
-            <div>
+            <div className="homepage">
 
                 <Greeting greetings={this.state.greeting}/>
               {/* renders the quote from the quote api */}
