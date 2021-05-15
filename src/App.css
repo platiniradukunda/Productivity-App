@@ -40,7 +40,7 @@
 
 .startWorkButton{
   height: 20%;
-  width: 40%;
+  width: 100%;
   /* margin-left: -210%; */
 }
 
@@ -48,4 +48,15 @@
   /* display: grid; */
   height: 100vh;
   width: 100vw;
+}
+
+.renderTasks ul li {
+  list-style: none;
+}
+
+.timeAndDate{
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3%;
 }
