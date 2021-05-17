@@ -50,8 +50,9 @@
   width: 100vw;
 }
 
-.renderTasks ul li {
-  list-style: none;
+.renderTasks ul li{
+  display: inline-block;
+  justify-content: center;
 }
 
 .timeAndDate{

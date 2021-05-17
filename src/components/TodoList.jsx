@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import RenderTasks from './RenderTasks';
 import TimeAndDate from './TimeAndDate';
+
 class TodoList extends Component {
     constructor(){
         super();
@@ -61,7 +62,7 @@ class TodoList extends Component {
             seconds = updateTime(seconds);
             
             // ternary statement for if it is AM or PM
-            var midday = (hours >= 12 ) ? "PM" : "AM";
+            var midday = (hours >= 12 ) ? " PM" : " AM";
             
             // variable that holds the time of the day to be pushed into state and rendered to the DOM
             const time = hours + ":" + minutes + ":" + seconds + midday;
