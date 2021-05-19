@@ -26,16 +26,19 @@
   display: grid;
   justify-content: center;
   align-items: center;
+  margin-top: -1%;
 }
 
 .renderQuote{
   margin-top: 10%;
+  padding: 0px 100px;
 }
 
 .startWork{
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 20px;
 }
 
 .startWorkButton{
