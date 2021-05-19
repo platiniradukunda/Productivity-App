@@ -71,7 +71,14 @@
 }
 
 .enterTime p {
-  margin: 0px 0px;
+  align-content: center;
+  margin: -1px 5px;
+  font-size: 25px;
+}
+
+.enterTime input {
+  font-size: 20px;
+  margin: 0px 5px;
 }
 
 .individualTask{
@@ -88,4 +95,12 @@
   align-content: center; 
   font-size: 40px;
   margin: 0px 0px;
+}
+
+.containerTimer button {
+  font-size: 20px;
+}
+
+.finishedTask button{
+  font-size: 20px;
 }

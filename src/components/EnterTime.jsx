@@ -2,7 +2,7 @@ import React from 'react';
 import {useForm} from 'react-hook-form';
 import * as $ from 'jquery';
 
-function EnterTime({setTimeLeft}) {
+function EnterTime({setTimeLeft, setIsPaused}) {
     // declaring 3 variables; 
     // register that keeps track of everything that goes into our input. Limits the input to no more than 45 minutes and create an error
     // handleSubmit only runs if there are no errors
@@ -13,6 +13,7 @@ function EnterTime({setTimeLeft}) {
         // to clear out the minutes input field when the onSubmit function is called
         $("form").trigger("reset");
         setTimeLeft(data.minutes*60);
+        setIsPaused(false);
     }
 
     return (
