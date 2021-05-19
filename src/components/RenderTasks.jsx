@@ -7,7 +7,6 @@ class RenderTasks extends Component {
         this.state={
             array: this.props.tasks,
         }
-        console.log(this.state.array);
     }
     deletingTask = (index) => {
         let newArray = this.state.array
@@ -19,9 +18,11 @@ class RenderTasks extends Component {
     render() {
         return (
             <div className="renderTasks">
+                {/* mapping over the array to render it to the DOM and also passing each individual item as a prop */}
+                {/* The passed prop will be used on the next page (where it is linked to. match concept is used here) */}
                 {this.state.array.map(
                     (taskInTheList, i) => {
-                       return <ul key={i}> <input type="checkbox"/> <li>{taskInTheList}</li> <Link to="/task"> <button>Start</button></Link> <button onClick={()=>this.deletingTask(i)} >Delete</button> </ul>
+                       return <ul key={i}> <input type="checkbox"/> <li>{taskInTheList}</li> <Link to={`/task/${taskInTheList}`}> <button>Start</button></Link> <button onClick={()=>this.deletingTask(i)} >Delete</button> </ul>
                        }
                 )}
             </div>

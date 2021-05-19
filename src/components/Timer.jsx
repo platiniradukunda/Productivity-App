@@ -15,12 +15,10 @@ function Timer({timeLeft, setTimeLeft, isPaused, setIsPaused}) {
      useEffect(()=>{
         //  variable that holds the setInterval function which will decrement the timeLeft by 1 second as a second passes
         const id = setInterval(()=>{
-            // ternary statement that checks if the state is true and if it is then it will clear the interval.
+            // ternary statement that checks if the isPaused in state is true and if it is then it will clear the interval
+            // clearInterval() clears a timer set with the setInterval() method
             // if it's false then we will decrement the timer(timeLeft) by 1 sec
-            {
-               isPaused? clearInterval(intervalRef.current):setTimeLeft(timeLeft-1)
-            }
-            
+            { isPaused ? clearInterval(intervalRef.current) : setTimeLeft(timeLeft-1) } 
         }, 1000);
         // useRef is initialized to the passed argument in this case id which holds the function that decrements timeLeft
         intervalRef.current=id;
