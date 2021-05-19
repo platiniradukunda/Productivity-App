@@ -9,9 +9,19 @@ class TodoList extends Component {
             userInput: '',
             toDoThings: [],
             date: null,
-            time: null,
+            hour: null,
+            minute: null,
+            second: null,
+            midday: null,
         }
     }
+
+    // intervalRef = React.createRef();
+    // componentDidMount(){
+    //     const id = setInterval(this.mountingComponent,1000)
+    //     intervalRef.current=id;
+    //     return () => clearInterval(intervalRef.current);
+    // }
 
     componentDidMount(){
         // function to get the time data
@@ -61,13 +71,14 @@ class TodoList extends Component {
             
             // ternary statement for if it is AM or PM
             var midday = (hours >= 12 ) ? " PM" : " AM";
-            
-            // variable that holds the time of the day to be pushed into state and rendered to the DOM
-            const time = hours + ":" + minutes + ":" + seconds + midday;
+
             // updating state with the current time and greeting statement
             this.setState({
                 date: dayDisplayed,
-                time: time,
+                hour: hours,
+                minute: minutes,
+                second: seconds,
+                midday: midday,
             })
         }
         // calling on the function so that it renders on component Mount
@@ -93,7 +104,7 @@ class TodoList extends Component {
         return (
             <div className="toDoListPage">
                 <div className="timeAndDate">
-                    <TimeAndDate date={this.state.date} time={this.state.time} />
+                    <TimeAndDate date={this.state.date} hour={this.state.hour} minute={this.state.minute} second={this.state.second} midday={this.state.midday}/>
                 </div>
 
                 {/* div for the form that adds things to the to-do list */}
