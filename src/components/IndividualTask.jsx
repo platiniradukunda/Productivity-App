@@ -23,6 +23,10 @@ function IndividualTask({match}) {
                 <ClickedTask currentTask={match.params.task}/>
             </div>
 
+            <div className="taskDetails">
+                <input type="text" name="" id="" />
+            </div>
+
             {/* have the ability to manipulate the set time in the other components so we need to pass props */}
             <div className="timerInIndividualTask">
                 <EnterTime setTimeLeft={setTimeLeft} setIsPaused={setIsPaused}/>

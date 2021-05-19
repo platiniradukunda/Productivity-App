@@ -3,7 +3,7 @@ import React from 'react';
 function clickedTask({currentTask}) {
     return (
         <div>
-            <h1>{currentTask}</h1>
+            <h1>{`Current task: ${currentTask}`}</h1>
         </div>
     );
 }

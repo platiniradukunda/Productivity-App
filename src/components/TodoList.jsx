@@ -109,7 +109,7 @@ class TodoList extends Component {
 
                 {/* div for the form that adds things to the to-do list */}
                 <div className="innerFormDiv">
-                <h1>Today's agenda</h1>
+                    <h1>Today's agenda</h1>
                     <input type="text" placeholder="add task to list..." className="input" value={this.state.userInput} onChange={(event)=>{
                         this.changeUserInput(event.target.value)
                     }

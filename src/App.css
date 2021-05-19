@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: black;
+  background-color: rgb(164,203,243);
   color: white;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
@@ -42,9 +42,17 @@
 }
 
 .startWorkButton{
-  height: 20%;
-  width: 100%;
-  /* margin-left: -210%; */
+  font-size: 30px;
+  border: solid whitesmoke 1px;
+  cursor: pointer;
+  font-size: 30px;
+  background-color: transparent;
+  color: whitesmoke;
+  transition: 0.5s;
+}
+
+.startWorkButton:hover{
+  color: rgb(199, 182, 182);
 }
 
 .toDoListPage{
@@ -87,6 +95,8 @@
 .individualTask{
   height: 100vh;
   width: 100vw;
+  display: grid;
+
 }
 .timer{
   display: flex;
@@ -108,4 +118,68 @@
 
 .finishedTask button {
   font-size: 20px;
+}
+
+.taskDetails input{
+  width: 70vw;
+  height: 30vh;
+}
+
+.innerFormDiv input {
+  background-color: transparent;
+  width: 30%;
+  height: 40%;
+  font-size: 30px;
+  border: solid whitesmoke 1px;
+  margin-right: 1%;
+  cursor: pointer;  
+}
+
+.innerFormDiv input::-webkit-input-placeholder {
+  color: whitesmoke;
+  transition: opacity .2s ease-in-out;
+}
+
+.innerFormDiv input:focus::-webkit-input-placeholder {
+  opacity: 0.5;
+}
+
+.innerFormDiv button {
+  font-size: 30px;
+  border: solid whitesmoke 1px;
+  cursor: pointer;
+  font-size: 30px;
+  background-color: transparent;
+  color: whitesmoke;
+  transition: 0.8s;
+}
+
+.innerFormDiv button:hover{
+  color: rgb(199, 182, 182);
+}
+
+.renderTasks li{
+  font-size: 30px;
+  color: whitesmoke;
+}
+
+.renderTasks button{
+  font-size: 30px;
+  color: whitesmoke;
+  background-color: transparent;
+  border: solid whitesmoke 1px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.renderTasks button:hover{
+  color: rgb(199, 182, 182);
+}
+
+.renderTasks input{
+  width: 20px;
+  height: 20px;
+  color: whitesmoke;
+  cursor: pointer;
+  background-color: transparent;
 }
