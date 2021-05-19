@@ -4,7 +4,10 @@ import RenderedTime from './RenderedTime';
 function Timer({timeLeft, setTimeLeft, isPaused, setIsPaused}) {
 
      // converting timeLeft(seconds) from seconds to minutes and seconds
-     let  minutes = Math.floor(timeLeft/60);
+    //  1 second = 1/60 minutes
+     let  minutes = Math.floor(timeLeft/60); 
+     // since timeLeft is now in seconds ie if user enters 1.5 now the timeLeft is 90 seconds.
+    //  this is the same as 90-60*1 = 30 seconds
      let seconds = Math.floor(timeLeft-60*minutes);  
 
      let intervalRef = useRef();
