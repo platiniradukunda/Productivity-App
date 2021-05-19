@@ -53,6 +53,7 @@
 .renderTasks ul li{
   display: inline-block;
   justify-content: center;
+  width: 30%;
 }
 
 .timeAndDate{
@@ -60,4 +61,31 @@
   display: flex;
   justify-content: space-between;
   padding-left: 3%;
+}
+
+.enterTime {
+  align-content: center;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.enterTime p {
+  margin: 0px 0px;
+}
+
+.individualTask{
+  height: 100vh;
+  width: 100vw;
+}
+.timer{
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  font-size: 40px;
+}
+.renderedTime h4{
+  align-content: center; 
+  font-size: 40px;
+  margin: 0px 0px;
 }

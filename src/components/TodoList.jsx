@@ -28,12 +28,10 @@ class TodoList extends Component {
             // variable for the month. we have to using this because getMonth() returns the month in integer form. ex: May as 4.
             var options = {month: 'long'};
             var month = new Intl.DateTimeFormat('en-US', options).format(date);
-            console.log(month);
             // variable for the date on the calendar month
             var dateCalendar = date.getDate();
             // variable for the day of the week. the day of the week returns as a number so it has to be changed into a string.
             var day = date.getDay();
-            console.log(day)
             // declaring the variables for the integers returned when getDay is called for specific days
             var weekDay = new Array(7);
             weekDay[1]="Monday";
@@ -67,8 +65,6 @@ class TodoList extends Component {
             // variable that holds the time of the day to be pushed into state and rendered to the DOM
             const time = hours + ":" + minutes + ":" + seconds + midday;
             // updating state with the current time and greeting statement
-            console.log(date);
-            console.log(time);
             this.setState({
                 date: dayDisplayed,
                 time: time,

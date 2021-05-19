@@ -11,7 +11,7 @@ function App() {
     <div className="App">
       <Switch>
       <Route exact path="/" component={Homepage} />
-      <Route exact path="/todolist" component={TodoList} />
+      <Route path="/todolist" component={TodoList} />
       <Route path="/task" component={IndividualTask}/>
       </Switch>
     </div>

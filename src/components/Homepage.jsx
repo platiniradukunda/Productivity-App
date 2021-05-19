@@ -63,8 +63,6 @@ class Homepage extends Component {
                 greeting: greetings,
                 time: time,
             })
-            console.log(time);
-            console.log(greetings);
         }
 
         // calling the function to get a greeting when component mounts
