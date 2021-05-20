@@ -1,15 +1,14 @@
-import React, {useState, useEffect,useRef} from 'react';
+import React, {useState, useEffect} from 'react';
 
 function TimeAndDate (props) {
 
     const [time, setTime] = useState(new Date());
 
-    let intervalRef = useRef();
+    
     useEffect(()=>{
         const id = setInterval( currentTime(), 1000 )
-        intervalRef.current=id;
-        return () => clearInterval(intervalRef.current);
-    },[]);
+        return () => clearInterval(id);
+    });
 
     var currentTime =() =>{
                 setTime(new Date());

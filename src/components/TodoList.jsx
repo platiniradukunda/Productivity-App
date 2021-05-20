@@ -101,6 +101,7 @@ class TodoList extends Component {
         }
     
     render() {
+        console.log("rendering")
         return (
             <div className="toDoListPage">
                 <div className="timeAndDate">
