@@ -243,3 +243,10 @@
 .finishedTask button:hover{
   color: rgb(199, 182, 182);
 }
+
+.dateOnIndividualTask {
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 3%;
+}

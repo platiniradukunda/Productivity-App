@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class TimeAndDate extends Component {
+class timeAndDateOnTask extends Component {
     constructor(){
         super();
         this.state= {
@@ -17,9 +17,10 @@ class TimeAndDate extends Component {
     componentWillMount(){
         setInterval(()=>this.currentTime(),1000)
     }
+
     render() {
         return (
-            <div className="timeAndDate">
+            <div className="dateOnIndividualTask">
                 {/* Rendering the date */}
                 <h1>{this.state.time.toDateString()}</h1>
                 {/* Rendering the time */}
@@ -29,4 +30,4 @@ class TimeAndDate extends Component {
     }
 }
 
-export default TimeAndDate;
+export default timeAndDateOnTask;

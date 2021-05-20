@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ClickedTask from './ClickedTask';
 import EnterTime from './EnterTime';
+import TimeAndDateOnTask from './TimeAndDateOnTask';
 import Timer from './Timer';
 import TimeUp from './TimeUp';
 
@@ -15,8 +16,7 @@ function IndividualTask({match}) {
         <div className="individualTask">
 
             <div className="timeAndDayOnTask">
-
-
+                <TimeAndDateOnTask />
             </div>
 
             <div className="clickedOnTask">
