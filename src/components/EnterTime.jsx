@@ -32,7 +32,7 @@ function EnterTime({setTimeLeft, setIsPaused}) {
                         min: {value: 0.01, message:"Please enter 0-45 minutes"},
                         max: {value: 45, message:"Please enter 0-45 minutes"},
                     })}/>
-                <input type="submit" />
+                <input type="submit" className="timerSubmit"/>
                 {/* If there is an error in the form, then the corresponding message will be populated below the form on the DOM */}
                 {errors.minutes && <p>{errors.minutes.message}</p>}
             </form>

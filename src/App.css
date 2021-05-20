@@ -90,7 +90,18 @@
 .enterTime input {
   font-size: 20px;
   margin: 0px 5px;
+  background-color: transparent;
+  border: solid whitesmoke 1px;
+  color: whitesmoke;
 }
+
+.timerSubmit{
+  cursor: pointer;
+}
+
+.timerSubmit:hover{
+  color: rgb(199, 182, 182);
+} 
 
 .individualTask{
   height: 100vh;
@@ -112,8 +123,18 @@
 }
 
 .containerTimer button {
-  font-size: 20px;
   margin-top: 20px;
+  font-size: 30px;
+  border: solid whitesmoke 1px;
+  cursor: pointer;
+  font-size: 30px;
+  background-color: transparent;
+  color: whitesmoke;
+  transition: 0.8s;
+}
+
+.containerTimer button:hover{
+  color: rgb(199, 182, 182);
 }
 
 .finishedTask button {
@@ -123,6 +144,9 @@
 .taskDetails input{
   width: 70vw;
   height: 30vh;
+  background-color: transparent;
+  border: solid whitesmoke 1px;
+  font-size: 30px;
 }
 
 .innerFormDiv input {
@@ -182,4 +206,18 @@
   color: whitesmoke;
   cursor: pointer;
   background-color: transparent;
+  text-decoration-color: whitesmoke;
+}
+
+.finishedTask button{
+  font-size: 30px;
+  color: whitesmoke;
+  background-color: transparent;
+  border: solid whitesmoke 1px;
+  transition: 0.8s;
+  cursor: pointer;
+}
+
+.finishedTask button:hover{
+  color: rgb(199, 182, 182);
 }

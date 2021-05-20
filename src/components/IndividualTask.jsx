@@ -24,7 +24,7 @@ function IndividualTask({match}) {
             </div>
 
             <div className="taskDetails">
-                <input type="text" name="" id="" />
+                <input type="text" name="" placeholder="Enter task details here"/>
             </div>
 
             {/* have the ability to manipulate the set time in the other components so we need to pass props */}
