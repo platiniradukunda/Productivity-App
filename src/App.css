@@ -27,6 +27,9 @@
   justify-content: center;
   align-items: center;
   margin-top: -1%;
+  text-shadow: -5px -5px 5px #0002,
+               5px 5px 5px #0002;
+
 }
 
 .renderQuote{
@@ -49,6 +52,8 @@
   background-color: transparent;
   color: whitesmoke;
   transition: 0.5s;
+  box-shadow: -5px -5px 5px #0002,
+               5px 5px 5px #0002;
 }
 
 .startWorkButton:hover{
@@ -65,6 +70,9 @@
   display: inline-block;
   justify-content: center;
   width: 30%;
+  text-transform: capitalize;
+  box-shadow: -5px -5px 5px #0002,
+              5px 5px 5px #0002;
 }
 
 .timeAndDate{
@@ -72,6 +80,8 @@
   display: flex;
   justify-content: space-between;
   padding-left: 3%;
+  text-shadow: -5px -5px 5px #0002,
+              5px 5px 5px #0002;
 }
 
 .enterTime {
@@ -93,10 +103,14 @@
   background-color: transparent;
   border: solid whitesmoke 1px;
   color: whitesmoke;
+  box-shadow: -5px -5px 5px #0002,
+               5px 5px 5px #0002;
 }
 
 .timerSubmit{
   cursor: pointer;
+  box-shadow: -5px -5px 5px #0002,
+               5px 5px 5px #0002;
 }
 
 .timerSubmit:hover{
@@ -131,6 +145,8 @@
   background-color: transparent;
   color: whitesmoke;
   transition: 0.8s;
+  box-shadow: -5px -5px 5px #0002,
+               5px 5px 5px #0002;
 }
 
 .containerTimer button:hover{
@@ -157,6 +173,8 @@
   border: solid whitesmoke 1px;
   margin-right: 1%;
   cursor: pointer;  
+  box-shadow: -5px -5px 5px #0002,
+  5px 5px 5px #0002;
 }
 
 .innerFormDiv input::-webkit-input-placeholder {
@@ -176,10 +194,27 @@
   background-color: transparent;
   color: whitesmoke;
   transition: 0.8s;
+  box-shadow: -5px -5px 5px #0002,
+              5px 5px 5px #0002;
 }
 
 .innerFormDiv button:hover{
   color: rgb(199, 182, 182);
+}
+
+.innerFormDiv h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+  color: whitesmoke;
+  text-shadow: -5px -5px 5px #0002,
+              5px 5px 5px #0002;
+}
+
+.clickedTask h1{
+  font-size: 2.5em;
+  color: whitesmoke;
+  text-shadow: -5px -5px 5px #0002,
+              5px 5px 5px #0002;
 }
 
 .renderTasks li{
@@ -194,6 +229,8 @@
   border: solid whitesmoke 1px;
   transition: 0.8s;
   cursor: pointer;
+  box-shadow: -5px -5px 5px #0002,
+              5px 5px 5px #0002;
 }
 
 .renderTasks button:hover{
@@ -204,6 +241,8 @@
   width: 30px;
   height: 30px;
   cursor: pointer;
+  box-shadow: -5px -5px 5px #0002,
+              5px 5px 5px #0002;
   /* -webkit-appearance: none; */
   /* appearance: none; */
   /* background-color: none;
@@ -238,6 +277,8 @@
   border: solid whitesmoke 1px;
   transition: 0.8s;
   cursor: pointer;
+  box-shadow: -5px -5px 5px #0002,
+               5px 5px 5px #0002;
 }
 
 .finishedTask button:hover{
@@ -249,4 +290,6 @@
   display: flex;
   justify-content: space-between;
   padding-left: 3%;
+  text-shadow: -5px -5px 5px #0002,
+              5px 5px 5px #0002;
 }

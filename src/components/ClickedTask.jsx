@@ -2,8 +2,8 @@ import React from 'react';
 
 function clickedTask({currentTask}) {
     return (
-        <div>
-            <h1>{`Current task: ${currentTask}`}</h1>
+        <div className="clickedTask">
+            <h1>{`Current Task: ${currentTask}`}</h1>
         </div>
     );
 }

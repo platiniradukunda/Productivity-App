@@ -52,7 +52,7 @@ class Homepage extends Component {
             // conditional statements that check what time of the day it is
             if(hours<12) {
                 var greetings = "Good Morning, " + name + ". Let's grind!"
-            } else if(hours>12 && hours<=18) {
+            } else if(hours>=12 && hours<=18) {
                 greetings = "Good Afternoon, " + name
             } else {
                 greetings = "Good Evening, " + name
