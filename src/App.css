@@ -201,13 +201,35 @@
 }
 
 .renderTasks input{
-  width: 20px;
-  height: 20px;
-  color: whitesmoke;
+  width: 30px;
+  height: 30px;
   cursor: pointer;
-  background-color: transparent;
-  text-decoration-color: whitesmoke;
+  /* -webkit-appearance: none; */
+  /* appearance: none; */
+  /* background-color: none;
+  border: solid whitesmoke 1px; */
+  /* align-items: center;
+  align-content: center; */
 }
+
+/* .renderTasks input:checked{
+  background-color: transparent;
+} */
+
+/* .renderTasks input:checked:after{
+  display: flex;
+  align-items: center;
+  align-content: center;
+} */
+
+/* .renderTasks input:after{
+  background-color: transparent;
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c";
+  font-weight: 900;
+  color: whitesmoke;
+  display: none;
+} */
 
 .finishedTask button{
   font-size: 30px;
