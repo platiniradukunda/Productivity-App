@@ -43,7 +43,6 @@ class RenderTasks extends Component {
                        return <ul key={i}> <li>{taskInTheList}</li> <Link to={`/task/${taskInTheList}`}> <button>Start</button></Link> <button onClick={()=>this.deletingTask(i)} >Delete</button> </ul>
                        }
                 )}
-                {console.log(this.state.array)}
             </div>
         );
     }
