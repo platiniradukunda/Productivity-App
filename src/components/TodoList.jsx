@@ -7,7 +7,7 @@ class TodoList extends Component {
         super();
         this.state = {
             userInput: '',
-            toDoThings: [],
+            toDoThings: JSON.parse(localStorage.getItem('toDoThings')),
         }
     }
 
@@ -16,16 +16,44 @@ class TodoList extends Component {
                 userInput: input,
             })
         }
-    
-        addToList = (input) => {
-            // event.preventDefault();
-            let listArray = this.state.toDoThings;
-            listArray.push(input);
+
+        addToLocalStorage = () => {
+            // task variable holds what the user types in DOM
+            var task = this.state.userInput;
+            var getItems = localStorage.getItem('toDoThings');
+            // conditional statement that checks if the array toDoThings already exists in local storage
+            if(getItems == null) {
+                // creating an array in local storage where we will push all the words, there is nothing with the name toDoThings
+                var toDoThings = [];
+                // pushing all the words a user types into the array that lives in local storage
+                toDoThings.push(task);
+                // putting the pushed information in json format so that the name of the array is the key and the name of the task goes in as a value
+                localStorage.setItem('toDoThings', JSON.stringify(toDoThings));
+            } else {
+                // the array already exists in local storage so we just pull it so that we can add to it
+                var toDoThings = JSON.parse(getItems);
+                // adding to the array that already exists
+                toDoThings.push(task);
+                // putting the pushed information in json format so that the name of the array is the key and the name of the task goes in as a value
+                localStorage.setItem('toDoThings', JSON.stringify(toDoThings));
+            }
             this.setState({
-                toDoThings:listArray,
+                // setting state to the array that lives in local storage
+                toDoThings: JSON.parse(getItems),
                 userInput: '',
             })
+            this.forceUpdate();
         }
+    
+        // addToList = (input) => {
+        //     // event.preventDefault();
+        //     let listArray = this.state.toDoThings;
+        //     listArray.push(input);
+        //     this.setState({
+        //         toDoThings:listArray,
+        //         userInput: '',
+        //     })
+        // }
     
     render() {
         return (
@@ -41,7 +69,7 @@ class TodoList extends Component {
                         this.changeUserInput(event.target.value)
                     }
                     }/>
-                    <button className="button" type="submit" onClick={()=>this.addToList(this.state.userInput)}>Add task</button>
+                    <button className="button" type="submit" onClick={this.addToLocalStorage}>Add task</button>
                 </div>
 
                 <RenderTasks tasks={this.state.toDoThings}/>

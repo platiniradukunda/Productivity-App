@@ -71,8 +71,8 @@
   justify-content: center;
   width: 30%;
   text-transform: capitalize;
-  box-shadow: -5px -5px 5px #0002,
-              5px 5px 5px #0002;
+  /* box-shadow: -5px -5px 5px #0002,
+              5px 5px 5px #0002; */
 }
 
 .timeAndDate{
@@ -105,6 +105,15 @@
   color: whitesmoke;
   box-shadow: -5px -5px 5px #0002,
                5px 5px 5px #0002;
+}
+
+.enterTime input:focus {
+  background: transparent;
+  outline: 0;
+}
+
+.enterTime input::-webkit-input-placeholder {
+  color: whitesmoke;
 }
 
 .timerSubmit{
@@ -157,12 +166,24 @@
   font-size: 20px;
 }
 
-.taskDetails input{
+.taskDetails textarea{
   width: 70vw;
   height: 30vh;
   background-color: transparent;
   border: solid whitesmoke 1px;
   font-size: 30px;
+  color: whitesmoke;
+  /* text-align: ;  */
+  text-orientation: upright; 
+}
+
+.taskDetails textarea::-webkit-input-placeholder {
+  color: whitesmoke;
+}
+
+.taskDetails textarea:focus {
+  background: transparent;
+  outline: 0;
 }
 
 .innerFormDiv input {
@@ -170,11 +191,18 @@
   width: 30%;
   height: 40%;
   font-size: 30px;
-  border: solid whitesmoke 1px;
+  border: none;
+  border-bottom: solid whitesmoke 1px;
   margin-right: 1%;
-  cursor: pointer;  
-  box-shadow: -5px -5px 5px #0002,
-  5px 5px 5px #0002;
+  cursor: pointer;
+  color: whitesmoke;  
+  /* box-shadow: -5px -5px 5px #0002,
+  5px 5px 5px #0002; */
+}
+
+.innerFormDiv input:focus{
+  background: transparent;
+  outline: 0;
 }
 
 .innerFormDiv input::-webkit-input-placeholder {
@@ -227,48 +255,16 @@
   color: whitesmoke;
   background-color: transparent;
   border: solid whitesmoke 1px;
+  border-radius: 5%;
   transition: 0.8s;
   cursor: pointer;
-  box-shadow: -5px -5px 5px #0002,
-              5px 5px 5px #0002;
+  /* box-shadow: -5px -5px 5px #0002,
+              5px 5px 5px #0002; */
 }
 
 .renderTasks button:hover{
   color: rgb(199, 182, 182);
 }
-
-.renderTasks input{
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  box-shadow: -5px -5px 5px #0002,
-              5px 5px 5px #0002;
-  /* -webkit-appearance: none; */
-  /* appearance: none; */
-  /* background-color: none;
-  border: solid whitesmoke 1px; */
-  /* align-items: center;
-  align-content: center; */
-}
-
-/* .renderTasks input:checked{
-  background-color: transparent;
-} */
-
-/* .renderTasks input:checked:after{
-  display: flex;
-  align-items: center;
-  align-content: center;
-} */
-
-/* .renderTasks input:after{
-  background-color: transparent;
-  font-family: "Font Awesome 5 Free";
-  content: "\f00c";
-  font-weight: 900;
-  color: whitesmoke;
-  display: none;
-} */
 
 .finishedTask button{
   font-size: 30px;
