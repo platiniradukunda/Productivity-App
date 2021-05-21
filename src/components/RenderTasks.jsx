@@ -7,7 +7,6 @@ class RenderTasks extends Component {
         this.state={
             array: this.props.tasks,
         }
-        console.log(this.state.array)
     }
 
     // functionToListen = () => {
