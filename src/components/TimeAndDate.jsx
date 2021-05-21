@@ -15,6 +15,7 @@ class TimeAndDate extends Component {
     }
     // Update the DOM with the new time every second
     componentWillMount(){
+        // the function that updates the state with the current time will be run every second
         setInterval(()=>this.currentTime(),1000)
     }
     render() {

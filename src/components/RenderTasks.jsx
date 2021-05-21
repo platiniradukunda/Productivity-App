@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { set } from 'react-hook-form';
 import {Link} from 'react-router-dom'
 
 class RenderTasks extends Component {
@@ -24,11 +23,14 @@ class RenderTasks extends Component {
         
 
     deletingTask = (index) => {
+        // setting the array in state to be newArray
         let newArray = this.state.array
+        // deleting the word that I click on. takes the index to start splicing from and how many words after that it should delete
         newArray.splice(index, 1);
         this.setState({
             array: newArray,
         })
+        // equating the current state to local storage to update the DOM
         localStorage.setItem('toDoThings', JSON.stringify(newArray));
         }
         
