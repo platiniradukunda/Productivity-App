@@ -23,4 +23,4 @@ refresh the page after clicking the ADD TASK button. This will allow the task to
 
 ## Link to app
 
-The app can be found at the following link: [Productivity App](https://dashboard.heroku.com/apps/reactjs-productivity-app/deploy/github)
+The app can be found at the following link: [Productivity App](https://reactjs-productivity-app.herokuapp.com/)
