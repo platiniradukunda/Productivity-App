@@ -7,6 +7,7 @@ class TodoList extends Component {
         super();
         this.state = {
             userInput: '',
+            // array that will hold things to do. Starts of as empty if nothing is in the user's local storage
             toDoThings: JSON.parse(localStorage.getItem('toDoThings')),
         }
     }

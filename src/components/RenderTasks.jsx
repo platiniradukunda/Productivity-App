@@ -18,7 +18,6 @@ class RenderTasks extends Component {
     //     })
     // }
         
-
         
 
     deletingTask = (index) => {

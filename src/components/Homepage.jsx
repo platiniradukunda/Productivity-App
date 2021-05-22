@@ -72,7 +72,7 @@ class Homepage extends Component {
         var getQuote = async () => {
         // variable for the url that will make our api call
         const url = `https://type.fit/api/quotes`
-        try {
+        try { 
             // fetching the data from the api url
             const response = await fetch(url);
             // converting the data to json
@@ -80,7 +80,7 @@ class Homepage extends Component {
 
             // variable for the number that goes into the quote array data that goes into state
             var quoteNumber = Math.floor(Math.random()*1644); 
-            // changing the quote in state to the generated quotes
+            // changing the quote in state to the generated quote and author
             this.setState({
                 quote: quotes[quoteNumber].text,
                 author: quotes[quoteNumber].author,
