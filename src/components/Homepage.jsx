@@ -80,7 +80,7 @@ class Homepage extends Component {
 
             // variable for the number that goes into the quote array data that goes into state
             var quoteNumber = Math.floor(Math.random()*1644); 
-            // changing the quote in state to the generated quote and author
+            // changing the quote in state to the generated quote and author  
             this.setState({
                 quote: quotes[quoteNumber].text,
                 author: quotes[quoteNumber].author,

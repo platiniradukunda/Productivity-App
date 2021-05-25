@@ -114,6 +114,11 @@
 
 .enterTime input::-webkit-input-placeholder {
   color: whitesmoke;
+  transition: opacity .2s ease-in-out;
+}
+
+.enterTime input:focus::-webkit-input-placeholder {
+  opacity: 0.5;
 }
 
 .timerSubmit{
@@ -179,6 +184,11 @@
 
 .taskDetails textarea::-webkit-input-placeholder {
   color: whitesmoke;
+  transition: opacity .2s ease-in-out;
+}
+
+.taskDetails textarea:focus::-webkit-input-placeholder {
+  opacity: 0.5;
 }
 
 .taskDetails textarea:focus {
