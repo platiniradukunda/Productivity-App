@@ -19,8 +19,6 @@ class Homepage extends Component {
         // function to determine if it is the morning or evening so that I can display
         // Good morning or Good evening
         var determineTime = () => {
-            // variable for my name
-            var name = "Platin";
             
             var date = new Date();
             // variable for the hour of the day
@@ -51,11 +49,11 @@ class Homepage extends Component {
 
             // conditional statements that check what time of the day it is
             if(hours<12) {
-                var greetings = "Good Morning, " + name + ". Let's grind!"
+                var greetings = "Good Morning, Let's grind!"
             } else if(hours>=12 && hours<=18) {
-                greetings = "Good Afternoon, " + name
+                greetings = "Good Afternoon"
             } else {
-                greetings = "Good Evening, " + name
+                greetings = "Good Evening"
             }
 
             // updating state with the current time and greeting statement
