@@ -10,7 +10,7 @@ class TodoList extends Component {
             // array that will hold things to do. Starts of as empty if nothing is in the user's local storage
             toDoThings: JSON.parse(localStorage.getItem('toDoThings')),
         }
-    }
+    } 
 
         changeUserInput=(input)=>{
             this.setState({
@@ -43,7 +43,8 @@ class TodoList extends Component {
                 toDoThings: JSON.parse(getItems),
                 userInput: '',
             })
-            this.forceUpdate();
+            // trying to force a refresh but it is not working
+            window.location.reload(false);
         }
     
         // addToList = (input) => {

@@ -18,7 +18,6 @@ class RenderTasks extends Component {
     //     })
     // }
         
-        
 
     deletingTask = (index) => {
         // setting the array in state to be newArray
